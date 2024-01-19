@@ -6,7 +6,7 @@ export default function Home() {
   const [data, setData] = useState({});
   const [country, setCountry] = useState("");
   const [error, setError] = useState(null);
-  const url = `https://api.openweathermap.org/data/2.5/weather?q=${country}&units=metric&appid=0fc509f9968fd60b4469846dcfdd628d`;
+  const url = `https://api.openweathermap.org/data/2.5/weather?q=${country}&units=metric&appid={id}`;
 
   const search = async (e) => {
     if (e.key === "Enter") {
